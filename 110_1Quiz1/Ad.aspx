@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ad.aspx.cs" Inherits="_110_1Quiz1.Ad" %>
+﻿
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ad.aspx.cs" Inherits="_110_1Quiz1.Ad" %>
 
 <!DOCTYPE html>
 
@@ -10,6 +11,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:XmlDataSource ID="XmlDataSource2" runat="server" DataFile="~/ch5-8.xml"></asp:XmlDataSource>
+            <asp:AdRotator ID="AdRotator1" runat="server" DataSourceID="XmlDataSource2" />
         </div>
     </form>
 </body>
